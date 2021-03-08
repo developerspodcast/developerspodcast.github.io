@@ -1,5 +1,5 @@
 import React from "react";
-import Section from "../../common/Section";
+import Section from "../Section";
 import styles from "./episodes.module.scss";
 
 const Episodes = () => {

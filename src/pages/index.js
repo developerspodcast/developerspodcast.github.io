@@ -1,11 +1,11 @@
 import React from "react";
+import Episodes from "../components/common/Episodes";
 import Layout from "../components/Layout";
-import Index from "../components/routes/Index";
 
 const IndexPage = () => {
   return (
     <Layout>
-      <Index></Index>
+      <Episodes></Episodes>
     </Layout>
   );
 };

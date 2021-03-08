@@ -1,10 +1,12 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import Footer from "../common/Footer";
+import Hero from "../common/Hero";
+import Section from "../common/Section";
 
 const Layout = ({ children }) => {
   return (
-    <React.Fragment>
+    <div className="wrapper">
       <Helmet
         title="Developers! mer än bara kod"
         meta={[
@@ -42,9 +44,10 @@ const Layout = ({ children }) => {
         <meta name="msapplication-TileColor" content="#9f00a7" />
         <meta name="theme-color" content="#ffffff"></meta>
       </Helmet>
-      <div className="content">{children}</div>
+      <Hero></Hero>
+      <Section color="blue">{children}</Section>
       <Footer></Footer>
-    </React.Fragment>
+    </div>
   );
 };
 
