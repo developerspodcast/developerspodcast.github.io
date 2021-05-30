@@ -5,6 +5,33 @@ import styles from "./episodes.module.scss";
 const Episodes = () => {
   const episodes = [
     {
+      id: "8242faf9",
+    },
+    {
+      id: "366cb34f",
+    },
+    {
+      id: "c23495ee",
+    },
+    {
+      id: "44cf76fc",
+    },
+    {
+      id: "348b9dcb",
+    },
+    {
+      id: "9c531407",
+    },
+    {
+      id: "785bda22",
+    },
+    {
+      id: "78c375e9",
+    },
+    {
+      id: "ab73607d",
+    },
+    {
       id: "b032e11f",
     },
     {
@@ -16,7 +43,6 @@ const Episodes = () => {
     {
       id: "2a867e9c",
     },
-
     {
       id: "92ca9be1",
     },
