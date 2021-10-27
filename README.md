@@ -1,13 +1,20 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+# 🙋 Hej och välkommen till podden Developers!
 
-## 🚀 Quick start
+Podden görs av Madde och Sofia, som arbetar med mjukvaruutveckling.
+
+* Webbsida: https://www.developerspodcast.com
+* Instagram: instagram.com/developerspodcast
+* Facebook: facebook.com/developerspodcast
+* Mail: hello@developerspodcast.com
+
+Ljud och klippning av Gustav Hallberg.
+
+## Hjälp oss med hemsidan!
+Om du tycker att vår webbsida ser förskräcklig ut, sitt inte bara där och tyck, skapa en pull request och gör något åt det!
+
+Vi använder oss av Gatsby, nedan följer en snabbintro till hur det fungerar.
+
+### 🚀 Gatsby Quick start
 
 1.  **Create a Gatsby site.**
 
