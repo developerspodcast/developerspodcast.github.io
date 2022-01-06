@@ -2,7 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import Footer from "../common/Footer";
 import Hero from "../common/Hero";
-import Section from "../common/Section";
+import styles from "./layout.module.css";
 
 const Layout = ({ children }) => {
   return (
@@ -45,8 +45,8 @@ const Layout = ({ children }) => {
         <meta name="theme-color" content="#ffffff"></meta>
       </Helmet>
       <Hero></Hero>
-      <Section color="blue">{children}</Section>
-      <Footer></Footer>
+      <div className={styles.content}>{children}</div>
+      {/* <Footer></Footer> */}
     </div>
   );
 };

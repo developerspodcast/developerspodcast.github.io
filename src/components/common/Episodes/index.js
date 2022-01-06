@@ -1,6 +1,5 @@
 import React from "react";
-import Section from "../Section";
-import styles from "./episodes.module.scss";
+import styles from "./episodes.module.css";
 
 const Episodes = () => {
   const episodes = [
@@ -58,26 +57,24 @@ const Episodes = () => {
   ];
 
   return (
-    <Section color="blue">
-      <div className={styles.episodes}>
-        {episodes.map((episode, index) => {
-          return (
-            <div className={styles.episode} key={index}>
-              <h2>{episode.name}</h2>
+    <div className={styles.episodes}>
+      {episodes.map((episode, index) => {
+        return (
+          <div className={styles.episode} key={index}>
+            <h2>{episode.name}</h2>
 
-              <iframe
-                width="100%"
-                height="180"
-                frameborder="no"
-                scrolling="no"
-                seamless
-                src={`https://share.transistor.fm/e/${episode.id}/dark`}
-              ></iframe>
-            </div>
-          );
-        })}
-      </div>
-    </Section>
+            <iframe
+              width="100%"
+              height="180"
+              frameborder="no"
+              scrolling="no"
+              seamless
+              src={`https://share.transistor.fm/e/${episode.id}/dark`}
+            ></iframe>
+          </div>
+        );
+      })}
+    </div>
   );
 };
 

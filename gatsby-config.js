@@ -3,5 +3,5 @@ module.exports = {
     title: "Developers! podcast",
   },
 
-  plugins: ["gatsby-plugin-sass", "gatsby-plugin-react-helmet"],
+  plugins: ["gatsby-plugin-react-helmet"],
 };

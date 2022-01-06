@@ -1,15 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Rubik:ital,wght@0,300;0,700;1,300&display=swap");
+
+:root {
+  --blue: #1f264a;
+  --pink: #c62786;
+  --purple: #572a5f;
+  --yellow: #fed417;
+  --white: #fff;
+  --black: #3d3935;
+}
+
+* {
+  margin: 0;
+}
+
 body {
-  background: rgb(198, 39, 134);
-  background: linear-gradient(
-    0deg,
-    rgba(198, 39, 134, 1) 0%,
-    rgba(31, 38, 74, 1) 100%
-  );
-  color: #fed418;
+  background: var(--blue);
+  color: var(--white);
+  font-family: Rubik, sans-serif;
+  font-size: 18px;
+}
+
+p {
+  line-height: 28px;
 }
 
 .wrapper {
   height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0px auto;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
 }

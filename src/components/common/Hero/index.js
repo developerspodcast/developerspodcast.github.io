@@ -1,19 +1,18 @@
 import React from "react";
-import styles from "./hero.module.scss";
-import logo from "./logo.png";
+import styles from "./hero.module.css";
+import background from "./background.svg";
 
 const Hero = () => {
   return (
     <div className={styles.hero}>
-      <img className={styles.logo} alt="Developers! logo" src={logo}></img>
-
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 100 100"
-        preserveAspectRatio="none"
-      >
-        <polygon fill="#1f264a" points="0,100 100,0 100,100" />
-      </svg>
+      <img
+        src={background}
+        alt="Illustration av Sofia och Madde framför en rosa cirkel. Sofia är blond, har en grön tröja och håller i en kopp med ett git-träd. Madeleine är brunhårig, har en gul tröja och håller i sin dator med en ananaslogga."
+      ></img>
+      <div className={styles.tagline}>
+        <h1>Developers!</h1>
+        <h2>En podd om mer än bara kod</h2>
+      </div>
     </div>
   );
 };
