@@ -3,29 +3,39 @@
   flex-direction: column;
 }
 
-.hero img {
-  width: 90%;
+.hero {
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .tagline {
+  text-align: right;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 2rem;
-  text-align: right;
-  font-weight: 700;
+  height: 250px;
+  padding: 1rem;
+  -webkit-text-stroke: 2px var(--blue);
 }
 
 @media only screen and (min-width: 768px) {
-  .hero {
-    flex-direction: row;
-  }
-
-  .hero img {
-    width: 50%;
-  }
-
   .tagline {
-    width: 50%;
+    max-width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+  }
+
+  .tagline h1 {
+    font-size: 100px;
+  }
+
+  .tagline h2 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  .tagline {
+    width: 1200px;
   }
 }
