@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Rubik:ital,wght@0,300;0,700;1,300&display=swap");
 
 :root {
-  --blue: #1f264a;
+  --blue: hsl(230, 41%, 21%);
+  --blue-dark: #181e3a;
   --pink: #c62786;
   --purple: #572a5f;
   --yellow: #fed417;

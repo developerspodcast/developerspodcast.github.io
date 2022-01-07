@@ -1,0 +1,36 @@
+.container {
+  display: none;
+  position: fixed;
+  width: 100%;
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.container.visible {
+  background-color: var(--blue-dark);
+}
+
+.container ul {
+  margin: 20px 0;
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+}
+
+.inner {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    display: block;
+  }
+}
+
+.logo {
+  width: 150px;
+  position: absolute;
+  left: 50px;
+  top: 35px;
+}

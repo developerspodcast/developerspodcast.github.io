@@ -1,0 +1,75 @@
+.top {
+  position: fixed;
+  width: 100%;
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+  height: 50px;
+}
+
+.top.visible {
+  background-color: var(--blue-dark);
+}
+
+.container {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  max-width: 350px;
+  transform: translate3d(100%, 0, 0);
+  opacity: 0.8;
+  transition: all 200ms ease-in-out;
+  background: var(--blue-dark);
+}
+
+.container.open {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.15);
+}
+
+.container ul li {
+  display: block;
+}
+
+.button {
+  position: absolute;
+  background: none;
+  border: 0;
+  font-size: 24px;
+  top: 10px;
+  right: 15px;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.closeButton {
+  display: none;
+}
+
+.container.open .closeButton {
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    display: none;
+  }
+
+  .top {
+    display: none;
+  }
+
+  .button {
+    display: none;
+  }
+}
+
+.logo {
+  width: 110px;
+  position: absolute;
+  left: 20px;
+  top: 10px;
+}

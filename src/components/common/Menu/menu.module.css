@@ -1,0 +1,17 @@
+.inner {
+  margin: 40px;
+}
+
+.inner li {
+  list-style-type: none;
+  margin: 20px 0;
+  color: var(--white);
+}
+
+.inner li a {
+  text-decoration: none;
+}
+
+.inner li a:visited {
+  color: var(--white);
+}

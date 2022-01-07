@@ -1,0 +1,10 @@
+.content {
+  margin: 0 auto;
+  width: 90%;
+}
+
+@media only screen and (min-width: 768px) {
+  .content {
+    max-width: 1200px;
+  }
+}
