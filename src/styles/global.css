@@ -40,6 +40,10 @@ p {
   margin-bottom: 1rem;
 }
 
+a {
+  color: var(--white);
+}
+
 p {
   margin: 1rem 0;
 }
