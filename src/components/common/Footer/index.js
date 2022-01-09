@@ -1,8 +1,6 @@
 import React from "react";
 import styles from "./footer.module.css";
-import instagram from "./instagram.png";
-import facebook from "./facebook.png";
-import rss from "./rss.png";
+import { Instagram, Facebook, Rss } from "./Icons";
 
 const Footer = () => {
   return (
@@ -13,7 +11,7 @@ const Footer = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <img src={instagram} alt="Instagram"></img>
+        <Instagram className={styles.icon} />
       </a>
       <a
         className={styles.social}
@@ -21,7 +19,7 @@ const Footer = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <img src={facebook} alt="Facebook"></img>
+        <Facebook className={styles.icon} />
       </a>
       <a
         className={styles.social}
@@ -29,7 +27,7 @@ const Footer = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <img src={rss} alt="RSS"></img>
+        <Rss className={styles.icon} />
       </a>
     </footer>
   );

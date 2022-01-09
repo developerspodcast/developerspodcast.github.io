@@ -1,4 +1,4 @@
-/* footer {
+footer {
   background: #c62786;
   height: 100px;
   width: 100%;
@@ -9,7 +9,13 @@
 
 .social {
   padding: 20px;
-  img {
-    width: 50px;
-  }
-} */
+}
+
+.social img {
+  width: 50px;
+}
+
+.icon {
+  height: 40px;
+  fill: var(--white);
+}
