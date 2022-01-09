@@ -7,7 +7,7 @@ const TopMenu = ({ children, visible }) => {
   return (
     <div className={`${styles.container} ${visible ? styles.visible : ""}`}>
       <Content className={styles.inner}>
-        <img className={styles.logo} src={logo}></img>
+        <img className={styles.logo} src={logo} alt="Devlopers! logo"></img>
         {children}
       </Content>
     </div>

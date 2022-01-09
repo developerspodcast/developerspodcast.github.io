@@ -8,7 +8,7 @@ const SlideIn = ({ children, visible }) => {
   return (
     <>
       <div className={`${styles.top} ${visible ? styles.visible : ""}`}>
-        <img className={styles.logo} src={logo}></img>
+        <img className={styles.logo} src={logo} alt="Devlopers! logo"></img>
         <button onClick={() => setOpen(true)} className={styles.button}>
           =
         </button>

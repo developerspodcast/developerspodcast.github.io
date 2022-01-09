@@ -22,7 +22,12 @@ const IndexPage = () => {
           </p>
         </div>
         <TwoSection
-          firstSection={<img src={sofia}></img>}
+          firstSection={
+            <img
+              src={sofia}
+              alt="Bild på Sofia. Sofia har långt blont hår, en grön tröja och en kopp med ett git-träd på."
+            ></img>
+          }
           secondSection={
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
@@ -39,7 +44,12 @@ const IndexPage = () => {
         ></TwoSection>
 
         <TwoSection
-          secondSection={<img src={madde}></img>}
+          secondSection={
+            <img
+              src={madde}
+              alt="Bild på Madde. Madde har långt brunt hår, gul tröja och håller i en laptop med en ananas som logga."
+            ></img>
+          }
           firstSection={
             <p>
               Madde är 30 år, bor i Malmö och jobbar som fullstackutvecklare sen

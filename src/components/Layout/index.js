@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet";
 import Footer from "../common/Footer";
 import Hero from "../common/Hero";
 import Menu from "../common/Menu";
-import styles from "./layout.module.css";
 
 const Layout = ({ children }) => {
   return (
