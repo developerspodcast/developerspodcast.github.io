@@ -1,12 +1,16 @@
 import React from "react";
+import Content from "../components/common/Content";
 import Layout from "../components/Layout";
+import Episodes from "../components/routes/Episodes";
 
-const IndexPage = () => {
+const EpisodesPage = () => {
   return (
     <Layout>
-      <h2>Avsnitt</h2>
+      <Content>
+        <Episodes></Episodes>
+      </Content>
     </Layout>
   );
 };
 
-export default IndexPage;
+export default EpisodesPage;

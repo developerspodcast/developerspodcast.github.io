@@ -40,6 +40,8 @@ const Menu = () => {
         <a
           className={styles.menuItem}
           href="https://developerspodcast.myspreadshop.se/"
+          target="_blank"
+          rel="noreferrer"
         >
           Merch
         </a>
