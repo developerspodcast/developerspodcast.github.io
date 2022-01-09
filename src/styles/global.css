@@ -40,5 +40,8 @@ p {
   margin-bottom: 1rem;
 }
 
+p {
+  margin: 1rem 0;
+}
 @media only screen and (min-width: 768px) {
 }
