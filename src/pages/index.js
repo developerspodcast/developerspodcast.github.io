@@ -29,33 +29,41 @@ const IndexPage = () => {
             ></img>
           }
           secondSection={
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-              nec pellentesque purus. Nullam feugiat lorem id fringilla luctus.
-              Donec at ex risus. Morbi venenatis massa porta nisi efficitur, id
-              volutpat neque laoreet. Aenean malesuada luctus nisi eu imperdiet.
-              Curabitur ut congue turpis. Morbi vel urna orci. Aliquam
-              elementum, elit eu sodales efficitur, sapien ante pulvinar justo,
-              in interdum magna velit non tellus. Nam vel ligula mattis, tempor
-              odio quis, fermentum tellus. In non mi sed lorem interdum placerat
-              eu sit amet lorem. Donec eleifend justo vel auctor mattis.
-            </p>
+            <div>
+              <p>
+                Sofia är en utvecklare som drivs av glädjen av att få skapa
+                bättre produkter, starkare relationer och utvecklas för varje
+                dag som går. Hon har erfarenhet att bygga produkter för både små
+                och stora företag och är som vassast när hon får vara med tidigt
+                i product-discovery fasen.
+              </p>
+              <p>Pratar helst om: hållbarhet inom IT, husdjur och elbilar</p>
+              <p>Favoritmat: italienskt och asiatiskt</p>
+            </div>
           }
         ></TwoSection>
 
         <TwoSection
+          firstSection={
+            <div>
+              <p>
+                Madde är 30 år, bor i Malmö och jobbar som utvecklare sen 2014.
+                Programmering ligger henne varmt om hjärtat eftersom det är en
+                möjlighet att få skapa <em>någonting</em> från{" "}
+                <em>ingenting</em> och den stora glädjen är att som team få
+                leverera produkter som skapar ett värde för användarna.
+              </p>
+              <p>
+                Pratar helst om: personlig utveckling, inkludering och träning
+              </p>
+              <p>Favoritmat: hamburgare</p>
+            </div>
+          }
           secondSection={
             <img
               src={madde}
               alt="Bild på Madde. Madde har långt brunt hår, gul tröja och håller i en laptop med en ananas som logga."
             ></img>
-          }
-          firstSection={
-            <p>
-              Madde är 30 år, bor i Malmö och jobbar som fullstackutvecklare sen
-              2014. Hennes stora passion är att forma team som tillsammans
-              jobbar så effektivt som möjligt.
-            </p>
           }
         ></TwoSection>
       </Content>
