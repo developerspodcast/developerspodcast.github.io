@@ -9,7 +9,7 @@ const Episodes = () => {
       let response;
       try {
         response = await fetch(
-          "http://developers-podcast-backend.azurewebsites.net/api/episodes"
+          "https://developers-podcast-backend.azurewebsites.net/api/episodes"
         );
       } catch (e) {
         console.log(e);
