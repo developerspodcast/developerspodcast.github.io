@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Loader from "../../common/Loader/Loader";
+import Loader from "../../common/Loader";
 import styles from "./episodes.module.css";
 
 const Episodes = () => {
