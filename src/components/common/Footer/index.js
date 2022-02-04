@@ -10,7 +10,7 @@ const Footer = () => {
         href="https://instagram.com/developerspodcast"
         target="_blank"
         rel="noreferrer"
-        title="Följ Developer Podcast på Instagram"
+        title="Följ Developers! på Instagram"
       >
         <Instagram className={styles.icon} />
       </a>
@@ -37,7 +37,7 @@ const Footer = () => {
         href="https://feeds.transistor.fm/developerspodcast"
         target="_blank"
         rel="noreferrer"
-        title="Prenumerera på Developer Podcast via RSS"
+        title="Prenumerera på Developers! via RSS"
       >
         <Rss className={styles.icon} />
       </a>
