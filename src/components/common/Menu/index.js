@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import SlideIn from "./SlideIn";
 import styles from "./menu.module.css";
 import TopMenu from "./TopMenu";
+import { Link } from "gatsby";
 
 const Menu = () => {
   const [visible, setVisible] = useState(false);
@@ -27,14 +28,14 @@ const Menu = () => {
   const renderItems = () => (
     <ul className={styles.inner}>
       <li>
-        <a className={styles.menuItem} href="/">
+        <Link to="/" className={styles.menuItem}>
           Hem
-        </a>
+        </Link>
       </li>
       <li>
-        <a className={styles.menuItem} href="/avsnitt">
+        <Link to="/avsnitt" className={styles.menuItem}>
           Avsnitt
-        </a>
+        </Link>
       </li>
       <li>
         <a
