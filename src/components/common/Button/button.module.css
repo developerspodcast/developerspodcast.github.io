@@ -1,0 +1,22 @@
+.root {
+  transition: background 200ms;
+  background-color: var(--yellow);
+  border: 1px solid transparent;
+  color: var(--blue-dark);
+  font-weight: 600;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  display: inline-block;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.root:hover {
+  background-color: var(--white);
+}
+.root:active {
+  background-color: var(--yellow);
+}
+.small {
+  font-size: 0.85rem;
+  padding: 0.5rem 1rem;
+}
