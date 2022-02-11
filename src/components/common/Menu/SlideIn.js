@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./slidein.module.css";
 import logo from "./logo.svg";
+import { Link } from "gatsby";
 
 const SlideIn = ({ children, visible }) => {
   const [open, setOpen] = useState(false);
@@ -8,7 +9,9 @@ const SlideIn = ({ children, visible }) => {
   return (
     <>
       <div className={`${styles.top} ${visible ? styles.visible : ""}`}>
-        <img className={styles.logo} src={logo} alt="Devlopers! logo"></img>
+        <Link to="/">
+          <img className={styles.logo} src={logo} alt="Devlopers! logo" />
+        </Link>
         <button onClick={() => setOpen(true)} className={styles.button}>
           =
         </button>
