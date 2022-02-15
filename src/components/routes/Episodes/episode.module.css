@@ -8,6 +8,6 @@
   line-height: 1.4;
   background-color: var(--blue-dark);
   padding: 1rem;
-  max-width: 60ch;
   border-radius: 5px;
+  margin: 20px 0;
 }
