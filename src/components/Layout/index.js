@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import CookieBanner from "../common/CookieBanner";
 import Footer from "../common/Footer";
 import Hero from "../common/Hero";
 import Menu from "../common/Menu";
@@ -45,6 +46,7 @@ const Layout = ({ children }) => {
         <meta name="msapplication-TileColor" content="#9f00a7" />
         <meta name="theme-color" content="#ffffff"></meta>
       </Helmet>
+      <CookieBanner></CookieBanner>
       <Menu></Menu>
       <Hero></Hero>
       <div className={styles.content}>{children}</div>

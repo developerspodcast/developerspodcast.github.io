@@ -1,0 +1,17 @@
+.banner {
+  background: var(--pink);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content {
+  margin-left: 10px;
+}
+
+.button {
+  margin-right: 10px;
+}
