@@ -1,0 +1,13 @@
+.episode {
+  margin-bottom: 3rem;
+}
+.title {
+  margin: 1rem 1rem 0.5rem;
+}
+.description {
+  line-height: 1.4;
+  background-color: var(--blue-dark);
+  padding: 1rem;
+  max-width: 60ch;
+  border-radius: 5px;
+}

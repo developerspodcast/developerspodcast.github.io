@@ -1,9 +1,14 @@
 import React, { useState, useEffect } from "react";
+import Button from "../../common/Button";
 import Loader from "../../common/Loader";
+import Episode from "./Episode";
 import styles from "./episodes.module.css";
+
+const LOAD_INCREMENT = 5;
 
 const Episodes = () => {
   const [episodes, setEpisodes] = useState([]);
+  const [displayedEpisodes, setDisplayedEpisodes] = useState(LOAD_INCREMENT);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -27,17 +32,23 @@ const Episodes = () => {
     task();
   }, []);
 
+  const loadMore = () => {
+    setDisplayedEpisodes(currentAmount => currentAmount + LOAD_INCREMENT)
+  }
+
+  const hasMoreEpisodes = displayedEpisodes < episodes.length;
+
   return (
     <div className={styles.episodes}>
       {loading && <Loader loadingText="Laddar in nya spännande avsnitt" />}
-      {episodes.map((episode, index) => {
+      {episodes.slice(0, displayedEpisodes).map((episode, index) => {
         return (
-          <div className={styles.episode} key={index}>
-            <h2>{episode.name}</h2>
-            <div dangerouslySetInnerHTML={{ __html: episode.embedCode }}></div>
-          </div>
+          <Episode episode={episode} key={index} />
         );
       })}
+      {hasMoreEpisodes &&
+        <Button onClick={loadMore} className={styles.loadMore}>Ladda in fler avsnitt</Button>
+      }
     </div>
   );
 };
