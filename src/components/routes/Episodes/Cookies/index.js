@@ -1,7 +1,7 @@
-import React from "react";
-import Layout from "../../../Layout";
-import Content from "../../../common/Content";
-import styles from "./cookies.module.css";
+import React from 'react';
+import Layout from '../../../Layout';
+import Content from '../../../common/Content';
+import * as styles from './cookies.module.css';
 
 const Cookies = () => {
   return (
@@ -33,20 +33,20 @@ const Cookies = () => {
         <p>Så här raderar du cookies i olika webbläsare:</p>
         <ul>
           <li>
-            <a href="https://support.mozilla.org/en-US/kb/clear-cookies-and-site-data-firefox?redirectslug=delete-cookies-remove-info-websites-stored&redirectlocale=en-US">
+            <a href='https://support.mozilla.org/en-US/kb/clear-cookies-and-site-data-firefox?redirectslug=delete-cookies-remove-info-websites-stored&redirectlocale=en-US'>
               Firefox
             </a>
           </li>
           <li>
-            <a href="https://support.google.com/chrome/answer/95647">Chrome</a>
+            <a href='https://support.google.com/chrome/answer/95647'>Chrome</a>
           </li>
           <li>
-            <a href="https://support.apple.com/guide/safari/manage-cookies-sfri11471/mac">
+            <a href='https://support.apple.com/guide/safari/manage-cookies-sfri11471/mac'>
               Safari
             </a>
           </li>
           <li>
-            <a href="https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09">
+            <a href='https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09'>
               Microsoft Edge
             </a>
           </li>

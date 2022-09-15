@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
-import Button from "../../common/Button";
-import Loader from "../../common/Loader";
-import Episode from "./Episode";
-import styles from "./episodes.module.css";
+import React, { useState, useEffect } from 'react';
+import Button from '../../common/Button';
+import Loader from '../../common/Loader';
+import Episode from './Episode';
+import * as styles from './episodes.module.css';
 
 const LOAD_INCREMENT = 5;
 
@@ -17,7 +17,7 @@ const Episodes = () => {
       setLoading(true);
       try {
         response = await fetch(
-          "https://developers-podcast-backend.azurewebsites.net/api/episodes"
+          'https://developers-podcast-backend.azurewebsites.net/api/episodes'
         );
       } catch (e) {
         setLoading(false);
@@ -33,22 +33,22 @@ const Episodes = () => {
   }, []);
 
   const loadMore = () => {
-    setDisplayedEpisodes(currentAmount => currentAmount + LOAD_INCREMENT)
-  }
+    setDisplayedEpisodes((currentAmount) => currentAmount + LOAD_INCREMENT);
+  };
 
   const hasMoreEpisodes = displayedEpisodes < episodes.length;
 
   return (
     <div className={styles.episodes}>
-      {loading && <Loader loadingText="Laddar in nya spännande avsnitt" />}
+      {loading && <Loader loadingText='Laddar in nya spännande avsnitt' />}
       {episodes.slice(0, displayedEpisodes).map((episode, index) => {
-        return (
-          <Episode episode={episode} key={index} />
-        );
+        return <Episode episode={episode} key={index} />;
       })}
-      {hasMoreEpisodes &&
-        <Button onClick={loadMore} className={styles.loadMore}>Ladda in fler avsnitt</Button>
-      }
+      {hasMoreEpisodes && (
+        <Button onClick={loadMore} className={styles.loadMore}>
+          Ladda in fler avsnitt
+        </Button>
+      )}
     </div>
   );
 };

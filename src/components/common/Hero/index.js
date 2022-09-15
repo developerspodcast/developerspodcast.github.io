@@ -1,7 +1,7 @@
-import React from "react";
-import styles from "./hero.module.css";
-import background from "./background.svg";
-import Content from "../Content";
+import React from 'react';
+import * as styles from './hero.module.css';
+import background from './background.svg';
+import Content from '../Content';
 
 const Hero = () => {
   return (
