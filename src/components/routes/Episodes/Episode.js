@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import Button from "../../common/Button";
-import styles from "./episode.module.css";
+import React, { useState } from 'react';
+import Button from '../../common/Button';
+import * as styles from './episode.module.css';
 
 const Episode = ({ episode, ...props }) => {
   const [showDescription, setShowDescription] = useState(false);
@@ -12,7 +12,7 @@ const Episode = ({ episode, ...props }) => {
       </div>
       <div dangerouslySetInnerHTML={{ __html: episode.embedCode }}></div>
       <Button small onClick={toggleDisplay}>
-        {!showDescription ? "Avsnittsinfo" : "Stäng"}
+        {!showDescription ? 'Avsnittsinfo' : 'Stäng'}
       </Button>
       {showDescription && (
         <div
